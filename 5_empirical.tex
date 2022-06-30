@@ -1,0 +1,40 @@
+\section{Empirical Approach}\label{sec:emp}
+\setstretch{1.5}
+
+We estimate the effects of the EC/29 using a difference-in-difference (DiD) design with a continuous treatment, exploiting within-municipality variation. Intuitively, we compare the evolution of outcomes in municipalities far from the EC/29 15\% target with municipalities that were already complying with the target. The underlying assumption is that changes in outcomes for the later group provide a good counterfactual for changes that would have been observed in the former group had they been complying with the target. 
+
+The identification relies on the cross-municipality variation in the share of own resource spent in the provision of healthcare and on the exogeneity of the EC/29 approval. Our approach to estimate the effect of the EC/29 correspond to the following equation:
+
+\begin{equation} \label{eq:1}
+    Y_{mts} = \beta \, Dist_{m,pre} * Post_t  +  \delta_{st} + \delta_j + \epsilon_{mts} + \theta \, Z_{m,pre} + \gamma \, X_{mts}
+\end{equation}
+
+were $Y_{mts}$ is an outcome of interest in municipality $m$, state $s$, year $t$; $Dist_{m,pre}$ is the baseline percentage points distance to EC/29 target in municipality $m$; $Post_t$ is a dummy that equals one if the year is 2001 or above. $\delta_{st}$ and $\delta_j$ represent state-year fixed effects and municipality fixed effects. Additionally we include and an interaction between socioeconomic baseline controls and time, $\theta Z_{j,pre} * \delta_{t}$, and time varying fiscal controls, $X_{mts}$. Standard errors are cluster at the municipality level and the parameters of interest are the $\beta$'s.
+
+We choose to work with the distance to the EC/29 target instead of the share of own resource spent in health for the ease of interpretation, as the distance positively correlates with changes in health spending. The inclusion of state-year fixed effects accounts for state-specific policies that might coincidentally affect outcomes in all municipalities within a state, and for the fact that some health policies and institutions are decentralized to state governments in Brazil. The time varying fiscal controls include compliance with the Fiscal Responsibility Law (LRF) \citep{lrf} and average health spending per capita in the neighboring municipalities. The LRF determines that municipalities must spend less than 60\% of its revenue in personnel. Municipalities not complying or close to the 60\% cap might have different incentives when increasing spending relative the municipalities complying with the LRF. \cite{castro2021effects} shows that health spending presents strong spatial externalities in Brazil, with neighbouring municipalities benefiting from better health outcomes, which highlights the importance of including this control.
+
+\subsection{Validity of the Research Design}
+
+Recent advances in econometric theory point out to several drawbacks in the two way fixed effects regressions generally used by empirical researches. \cite{callaway2021difference} highlights that DiD models with continuous treatment may require stronger parallel trends assumptions, as comparisons between different intensities of treatment can also be confounded by selection bias. Unlike usual DiD, this bias comes from the heterogeneity in treatment effects. If group of units have difference response to a certain dosage of treatment, the DiD will be contaminated by the differences in expected returns for these different dosage groups. Moreover, this bias persists even under traditional parallel trends assumption. For the estimator to be unbiased, we also need treatment effects across different dosage groups to be homogeneous at the same dosage. 
+
+Like the classic DiD, under randomization of treatment dosage, this stronger parallel trends assumption is satisfied, as groups do not choose dosage levels based on expected returns. But, differently from the classic DiD, there is still no clear way to verify whether this assumption is satisfied. In this study, treatment was not randomized, but we argue that is quite exogenous and it is very unlikely that municipalities chose their distance to the spending target established by the EC/29 based on expected increases in health spending per capita. 
+
+First, the process of approval of the EC/29 involved several political stages and actors and it was arguably quite difficult to predict when the proposals would become an amendment, what exactly would define, and how it would affect municipalities' public health spending decisions. Lastly, the strong relationship between baseline distance to the target and changes in health spending per capita presented in Figure \ref{fig:4} suggests that the constitutional amendment was binding\footnote{According to the Ministry of Health Financial Management Manual (Minitério da Saúde \citeyear{msmanual}), non-compliance with the minimum amount of resources that should be spent in the provision of healthcare can lead to sanctions similar to those imposed by the Fiscal Responsibility Law, such as retention of resources from the Municipalities’ Participation Fund and States’ Participation Fund, suspension of a term of office, and even Federal intervention.}. Therefore, it is fair to say that changes in spending across different distance to the target groups would probably be the same for a specific distance.
+
+We are not able to empirically assess homogeneity in treatment effect, but we can still check for pre-trends and evaluate if classic parallel trends assumption holds in our case. For that, we estimate a variation of equation \ref{eq:1}, that allows for more flexible coefficient estimates:
+
+\begin{equation} \label{eq:2}
+\begin{aligned}
+    Y_{mts} \, =  \, & \sum\limits_{i=1}^I \beta_{pre,i} \, Dist_{m,pre} \times EC29_{t+i} \, + \, \sum\limits_{j=0}^J \beta_{j} \, Dist_{m,pre} \times EC29_{t-j} \\  
+             & +  \delta_{st} + \delta_m + \epsilon_{mts} + \, \theta \, Z_{m,pre} \times \delta_{t} + \gamma \, X_{mts}
+\end{aligned}
+\end{equation}
+
+where $EC29_{t-j}$ are year specific indicators for whether EC/29 was enacted in year $t-j$; in like manner $EC29_{t+i}$ are specific year indicators for whether EC/29 was enacted in year $t+i$, that captures pre-trends in the outcome variable. The equation \ref{eq:2} also allow us to evaluate the dynamics through the years following the EC/29. 
+
+
+
+
+
+
+

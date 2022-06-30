@@ -1,0 +1,682 @@
+\section{Empirical Findings}\label{sec:emp}
+\setstretch{1.5}
+
+\subsection{Municipalities' Fiscal Response}
+
+\input{tables/revenue}
+\input{tables/spending_finbra}
+\input{tables/spending_siops}
+
+\begin{figure}[h]
+    \begin{center}
+    \caption{Causal Effects on Revenues per capita}\label{fig:revenue1}
+    \begin{subfigure}{0.49\textwidth}
+        \caption{\scriptsize Total Revenue}\label{fig:rev1_a}
+        \centering
+        \includegraphics[width=\textwidth]{plots/spending/finbra_reccorr_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.49\textwidth}
+        \centering
+        \caption{\scriptsize Tax Revenue}\label{fig:rev1_b}
+        \includegraphics[width=\textwidth]{plots/spending/finbra_rectribut_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.49\textwidth}
+        \centering
+        \caption{\scriptsize Transfers Revenue}\label{fig:rev1_c}
+        \includegraphics[width=\textwidth]{plots/spending/finbra_rectransf_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.49\textwidth}
+        \centering
+        \caption{\scriptsize Other Revenue}\label{fig:rev1_d}
+        \includegraphics[width=\textwidth]{plots/spending/finbra_rec_outros_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    
+    \end{center}
+    
+\end{figure}
+
+\begin{figure}[h]
+    \begin{center}
+    \caption{Causal Effects on Revenues (\% of Total Revenue)}\label{fig:revenue2}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize Tax Revenue}\label{fig:rev2_a}
+        \includegraphics[width=\textwidth]{plots/spending/finbra_rectribut_share_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize Transfers Revenue}\label{fig:rev2_b}
+        \includegraphics[width=\textwidth]{plots/spending/finbra_rectransf_share_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize Other Revenue}\label{fig:rev2_c}
+        \includegraphics[width=\textwidth]{plots/spending/finbra_rec_outros_share_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    
+    \end{center}
+    
+\end{figure}
+
+
+\begin{figure}[h]
+    \begin{center}
+    \caption{Causal Effects on Public Spending per capita - By Type}\label{fig:finbra1}
+    \begin{subfigure}{0.49\textwidth}
+        \caption{\scriptsize Total Spending}\label{fig:finbra1_a}
+        \centering
+        \includegraphics[width=\textwidth]{plots/spending/finbra_desp_o_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.49\textwidth}
+        \centering
+        \caption{\scriptsize Human Resource Spending}\label{fig:finbra1_b}
+        \includegraphics[width=\textwidth]{plots/spending/finbra_desp_pessoal_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.49\textwidth}
+        \centering
+        \caption{\scriptsize Investment Spending}\label{fig:finbra1_c}
+        \includegraphics[width=\textwidth]{plots/spending/finbra_desp_investimento_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.49\textwidth}
+        \centering
+        \caption{\scriptsize Other Spending}\label{fig:finbra1_d}
+        \includegraphics[width=\textwidth]{plots/spending/finbra_desp_outros_nature_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    
+    \end{center}
+    
+\end{figure}
+
+
+\begin{figure}[h]
+    \begin{center}
+    \caption{Causal Effects on Public Spending (\% of Total Spending) - By Type}\label{fig:finbra2}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize Human Resource Spending}\label{fig:finbra2_a}
+        \includegraphics[width=\textwidth]{plots/spending/finbra_desp_pessoal_share_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize Investment Spending}\label{fig:finbra2_b}
+        \includegraphics[width=\textwidth]{plots/spending/finbra_desp_investimento_share_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize Other Spending}\label{fig:finbra2_c}
+        \includegraphics[width=\textwidth]{plots/spending/finbra_desp_outros_nature_share_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    
+    \end{center}
+    
+\end{figure}
+
+
+
+
+\begin{figure}[h]
+    \begin{center}
+    \caption{Causal Effects on Public Spending per capita - By Category}\label{fig:finbra3}
+    \begin{subfigure}{0.32\textwidth}
+        \caption{\scriptsize Health and Sanitation Spending}\label{fig:finbra3_a}
+        \centering
+        \includegraphics[width=\textwidth]{plots/spending/finbra_desp_saude_san_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize Transport Spending}\label{fig:finbra3_b}
+        \includegraphics[width=\textwidth]{plots/spending/finbra_desp_transporte_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize Education and Culture Spending}\label{fig:finbra3_c}
+        \includegraphics[width=\textwidth]{plots/spending/finbra_desp_educ_cultura_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize Housing and Urban Spending}\label{fig:finbr3_d}
+        \includegraphics[width=\textwidth]{plots/spending/finbra_desp_hab_urb_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize Social Assistance Spending}\label{fig:finbra3_e}
+        \includegraphics[width=\textwidth]{plots/spending/finbra_desp_assist_prev_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize Spending in Other Categories}\label{fig:finbra3_f}
+        \includegraphics[width=\textwidth]{plots/spending/finbra_desp_outros_area_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    
+    \end{center}
+    
+\end{figure}
+
+
+
+\begin{figure}[h]
+    \begin{center}
+    \caption{Causal Effects on Public Spending (\% of Total Spending) - By Category}\label{fig:finbra4}
+    \begin{subfigure}{0.32\textwidth}
+        \caption{\scriptsize Health and Sanitation Spending}\label{fig:finbra4_a}
+        \centering
+        \includegraphics[width=\textwidth]{plots/spending/finbra_desp_saude_san_share_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize Transport Spending}\label{fig:finbra4_b}
+        \includegraphics[width=\textwidth]{plots/spending/finbra_desp_transporte_share_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize Education and Culture Spending}\label{fig:finbra4_c}
+        \includegraphics[width=\textwidth]{plots/spending/finbra_desp_educ_cultura_share_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize Housing and Urban Spending}\label{fig:finbr4_d}
+        \includegraphics[width=\textwidth]{plots/spending/finbra_desp_hab_urb_share_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize Social Assistance Spending}\label{fig:finbra4_e}
+        \includegraphics[width=\textwidth]{plots/spending/finbra_desp_assist_prev_share_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize Spending in Other Categories}\label{fig:finbra4_f}
+        \includegraphics[width=\textwidth]{plots/spending/finbra_desp_outros_area_share_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    
+    \end{center}
+    
+\end{figure}
+
+
+\begin{figure}[h]
+    \begin{center}
+    \caption{Causal Effects on Public Health Spending per capita - By Source}\label{fig:siops1}
+    \begin{subfigure}{0.32\textwidth}
+        \caption{\scriptsize Total Health Spending}\label{fig:siops1_a}
+        \centering
+        \includegraphics[width=\textwidth]{plots/spending/siops_despsaude_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize Own Resources}\label{fig:siops1_b}
+        \includegraphics[width=\textwidth]{plots/spending/siops_desprecpropriosaude_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize Transfers}\label{fig:siops1_c}
+        \includegraphics[width=\textwidth]{plots/spending/siops_despexrecproprio_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    
+    \end{center}
+    
+\end{figure}
+
+\begin{figure}[h]
+    \begin{center}
+    \caption{Causal Effects on Public Health Spending (\% of Total Health Spending) - By Source}\label{fig:siops2}
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \caption{\scriptsize Own Resources}\label{fig:siops2_a}
+        \includegraphics[width=\textwidth]{plots/spending/siops_desprecpropriosaude_share_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \caption{\scriptsize Transfers}\label{fig:siops2_b}
+        \includegraphics[width=\textwidth]{plots/spending/siops_despexrecproprio_share_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    
+    \end{center}
+    
+\end{figure}
+
+\begin{figure}[h]
+    \begin{center}
+    \caption{Causal Effects on Public Health Spending per capita - By Type}\label{fig:siops3}
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \caption{\scriptsize Human Resources}\label{fig:siops3_a}
+        \includegraphics[width=\textwidth]{plots/spending/siops_desppessoal_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \caption{\scriptsize Investiment}\label{fig:siops3_b}
+        \includegraphics[width=\textwidth]{plots/spending/siops_despinvest_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \caption{\scriptsize 3rd parties services}\label{fig:siops3_c}
+        \includegraphics[width=\textwidth]{plots/spending/siops_despservicoster_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \caption{\scriptsize Other Expenditures}\label{fig:siops3_d}
+        \includegraphics[width=\textwidth]{plots/spending/siops_despoutros_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    
+    \end{center}
+    
+\end{figure}
+
+\begin{figure}[h]
+    \begin{center}
+    \caption{Causal Effects on Public Health Spending (\% of Total Health Spending) - By Type}\label{fig:siops4}
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \caption{\scriptsize Human Resources}\label{fig:siops4_a}
+        \includegraphics[width=\textwidth]{plots/spending/siops_desppessoal_share_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \caption{\scriptsize Investiment}\label{fig:siops4_b}
+        \includegraphics[width=\textwidth]{plots/spending/siops_despinvest_share_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \caption{\scriptsize 3rd parties services}\label{fig:siops4_c}
+        \includegraphics[width=\textwidth]{plots/spending/siops_despservicoster_share_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \caption{\scriptsize Other Expenditures}\label{fig:siops4_d}
+        \includegraphics[width=\textwidth]{plots/spending/siops_despoutros_share_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    
+    \end{center}
+    
+\end{figure}
+
+\subsection{Causal Effects on Infant Mortality}
+
+\input{tables/imr}
+\input{tables/birth}
+
+\begin{figure}[h]
+    \begin{center}
+    \caption{Causal Effects on Infant Mortality Rates}\label{fig:imr1}
+    \begin{subfigure}{0.32\textwidth}
+        \caption{\scriptsize Total}\label{fig:imr1_a}
+        \centering
+        \includegraphics[width=\textwidth]{plots/IMR/tx_mi_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize Amenable to Primary Care}\label{fig:imr1_b}
+        \includegraphics[width=\textwidth]{plots/IMR/tx_mi_icsap_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize Non-Amenable to Primary Care}\label{fig:imr1_c}
+        \includegraphics[width=\textwidth]{plots/IMR/tx_mi_nicsap_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    
+    \end{center}
+    
+\end{figure}
+
+\begin{figure}[h]
+    \begin{center}
+    \caption{Causal Effects on Infant Mortality Rates - By Timing}\label{fig:imr2}
+    \begin{subfigure}{0.48\textwidth}
+        \caption{\scriptsize Fetal}\label{fig:imr2_a}
+        \centering
+        \includegraphics[width=\textwidth]{plots/IMR/tx_mi_fet_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \caption{\scriptsize Within 24h}\label{fig:imr2_b}
+        \includegraphics[width=\textwidth]{plots/IMR/tx_mi_24h_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \caption{\scriptsize 1 to 27 days}\label{fig:imr2_c}
+        \includegraphics[width=\textwidth]{plots/IMR/tx_mi_27d_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \caption{\scriptsize 27 days to 1 year}\label{fig:imr2_d}
+        \includegraphics[width=\textwidth]{plots/IMR/tx_mi_ano_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    
+    \end{center}
+    
+\end{figure}
+
+
+\begin{figure}[h]
+    \begin{center}
+    \caption{Causal Effects on Infant Mortality Rates - By Cause}\label{fig:imr3}
+    \begin{subfigure}{0.32\textwidth}
+        \caption{\scriptsize Infectious}\label{fig:imr3_a}
+        \centering
+        \includegraphics[width=\textwidth]{plots/IMR/tx_mi_infec_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize Respiratory}\label{fig:imr3_b}
+        \includegraphics[width=\textwidth]{plots/IMR/tx_mi_resp_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize Perinatal}\label{fig:imr3_c}
+        \includegraphics[width=\textwidth]{plots/IMR/tx_mi_perinat_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+        \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize Congenital}\label{fig:imr3_d}
+        \includegraphics[width=\textwidth]{plots/IMR/tx_mi_cong_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+        \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize External}\label{fig:imr3_e}
+        \includegraphics[width=\textwidth]{plots/IMR/tx_mi_ext_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+        \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize Nutritional}\label{fig:imr3_f}
+        \includegraphics[width=\textwidth]{plots/IMR/tx_mi_nut_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+        \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize Other}\label{fig:imr3_g}
+        \includegraphics[width=\textwidth]{plots/IMR/tx_mi_out_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+        \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize Ill-defined}\label{fig:imr3_h}
+        \includegraphics[width=\textwidth]{plots/IMR/tx_mi_illdef_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \end{center}
+    
+\end{figure}
+
+
+\begin{figure}[h]
+    \begin{center}
+    \caption{Causal Effects on Birth Outcomes}\label{fig:birth}
+    \begin{subfigure}{0.48\textwidth}
+        \caption{\scriptsize Apgar 1}\label{fig:birth_a}
+        \centering
+        \includegraphics[width=\textwidth]{plots/birth/birth_apgar1_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \caption{\scriptsize Apgar 5}\label{fig:birth_b}
+        \includegraphics[width=\textwidth]{plots/birth/birth_apgar5_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \caption{\scriptsize Low Birth Weight (<2.5k)}\label{fig:birth_c}
+        \includegraphics[width=\textwidth]{plots/birth/birth_low_weight_2500g_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \caption{\scriptsize Gestation Weeks 37+ }\label{fig:birth_d}
+        \includegraphics[width=\textwidth]{plots/birth/birth_gest_37plus_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    
+    \end{center}
+    
+\end{figure}
+
+
+
+\subsection{Mechanisms: Causal Effects on Health Inputs}
+
+\input{tables/infra}
+\input{tables/access}
+\input{tables/ambulatorial}
+
+
+\begin{figure}[h]
+    \begin{center}
+    \caption{Causal Effects on the Number of Health Facilities (per capita*1000) with:}\label{fig:infra}
+    \begin{subfigure}{0.24\textwidth}
+        \caption{\tiny Ambulatory Service}\label{fig:infra_a}
+        \centering
+        \includegraphics[width=\textwidth]{plots/infra/sia_ncnes_amb_mun_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.24\textwidth}
+        \centering
+        \caption{\tiny Low & Mid Complexity Ambulatory Service}\label{fig:infra_b}
+        \includegraphics[width=\textwidth]{plots/infra/sia_ncnes_amb_lc_mun_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.24\textwidth}
+        \centering
+        \caption{\tiny High Complexity Ambulatory Service}\label{fig:infra_c}
+        \includegraphics[width=\textwidth]{plots/infra/sia_ncnes_amb_hc_mun_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.24\textwidth}
+        \centering
+        \caption{\tiny Ambulatory Service by Low Skilled Workers}\label{fig:infra_d}
+        \includegraphics[width=\textwidth]{plots/infra/sia_ncnes_low_skill_mun_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.24\textwidth}
+        \centering
+        \caption{\tiny Ambulatory Service by Mid Skilled Workers}\label{fig:infra_e}
+        \includegraphics[width=\textwidth]{plots/infra/sia_ncnes_med_skill_mun_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.24\textwidth}
+        \centering
+        \caption{\tiny Ambulatory Service by Nurses}\label{fig:infra_f}
+        \includegraphics[width=\textwidth]{plots/infra/sia_ncnes_enf_mun_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.24\textwidth}
+        \centering
+        \caption{\tiny Ambulatory Service by Obstetrical Nurses}\label{fig:infra_g}
+        \includegraphics[width=\textwidth]{plots/infra/sia_ncnes_enfobs_mun_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.24\textwidth}
+        \centering
+        \caption{\tiny Ambulatory Service and Community Doctors}\label{fig:infra_h}
+        \includegraphics[width=\textwidth]{plots/infra/sia_ncnes_medcom_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.24\textwidth}
+        \centering
+        \caption{\tiny Obstetrical/Gyneco. Ambulatory Service}\label{fig:infra_i}
+        \includegraphics[width=\textwidth]{plots/infra/sia_ncnes_ginobs_mun_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.24\textwidth}
+        \centering
+        \caption{\tiny Pediatric Ambulatory Service}\label{fig:infra_j}
+        \includegraphics[width=\textwidth]{plots/infra/sia_ncnes_pediat_mun_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.24\textwidth}
+        \centering
+        \caption{\tiny Ambulatory Service and PSF Doctors}\label{fig:infra_k}
+        \includegraphics[width=\textwidth]{plots/infra/sia_ncnes_medpsf_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.24\textwidth}
+        \centering
+        \caption{\tiny Ambulatory Service and PSF Nurses}\label{fig:infra_l}
+        \includegraphics[width=\textwidth]{plots/infra/sia_ncnes_enfpsf_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.24\textwidth}
+        \centering
+        \caption{\tiny Ambulatory Service and PSF Nursing Assistants}\label{fig:infra_m}
+        \includegraphics[width=\textwidth]{plots/infra/sia_ncnes_outpsf_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.24\textwidth}
+        \centering
+        \caption{\tiny Ambulatory Service and PSF Teams}\label{fig:infra_n}
+        \includegraphics[width=\textwidth]{plots/infra/sia_ncnes_psf_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.24\textwidth}
+        \centering
+        \caption{\tiny Ambulatory Service and ACS Teams}\label{fig:infra_o}
+        \includegraphics[width=\textwidth]{plots/infra/sia_ncnes_acs_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.24\textwidth}
+        \centering
+        \caption{\tiny Ambulatory Service and ACS Nurses}\label{fig:infra_p}
+        \includegraphics[width=\textwidth]{plots/infra/sia_ncnes_enfacs_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    
+    \end{center}
+    
+\end{figure}
+
+
+\begin{figure}[h]
+    \begin{center}
+    \caption{Causal Effects on Primary Care Coverage - Extensive Margin}\label{fig:access1}
+    \begin{subfigure}{0.32\textwidth}
+        \caption{\scriptsize Population covered (share) by Community Health Agents}\label{fig:access1_a}
+        \centering
+        \includegraphics[width=\textwidth]{plots/access/ACS_popprop_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize Population covered (share) by Family Health Agents}\label{fig:iaccess1_b}
+        \includegraphics[width=\textwidth]{plots/access/eSF_popprop_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize N. of People Register in the Primary Care System (per capita)}\label{fig:access1_c}
+        \includegraphics[width=\textwidth]{plots/access/siab_regist_pers_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize N. of People Register in the CH Program (per capita)}\label{fig:access1_d}
+        \includegraphics[width=\textwidth]{plots/access/siab_regist_pers_pacs_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize N. of People Register in the FH Program (per capita)}\label{fig:access1_e}
+        \includegraphics[width=\textwidth]{plots/access/siab_regist_pers_psf_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    
+    
+    \end{center}
+    
+\end{figure}
+
+\begin{figure}[h]
+    \begin{center}
+    \caption{Causal Effects on Primary Care Coverage - Intensive Margin}\label{fig:access2}
+    \begin{subfigure}{0.32\textwidth}
+        \caption{\scriptsize N. of People Visited by Primary Care Agents (per capita)}\label{fig:access2_a}
+        \centering
+        \includegraphics[width=\textwidth]{plots/access/siab_accomp_especif_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize N. of People Visited by Community Health Agents (per capita)}\label{fig:iaccess2_b}
+        \includegraphics[width=\textwidth]{plots/access/siab_accomp_especif_pacs_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize N. of People Visited by Family Health Agents (per capita)}\label{fig:access2_c}
+        \includegraphics[width=\textwidth]{plots/access/siab_accomp_especif_psf_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize N. of Household Visits (per capita)}\label{fig:access2_d}
+        \includegraphics[width=\textwidth]{plots/access/siab_visit_cha_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize N. of Household Visits by Community Health Agents (per capita)}\label{fig:access2_e}
+        \includegraphics[width=\textwidth]{plots/access/siab_visit_cha_pacs_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize N. of Household Visits by Family Health Agents (per capita)}\label{fig:access2_f}
+        \includegraphics[width=\textwidth]{plots/access/siab_visit_cha_psf_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize N. of Appointments (per capita)}\label{fig:access2_g}
+        \includegraphics[width=\textwidth]{plots/access/siab_cons_especif_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize N. of Appointments from Community Health Program (per capita)}\label{fig:access2_h}
+        \includegraphics[width=\textwidth]{plots/access/siab_cons_especif_pacs_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize N. of Appointments from Family Health Program (per capita)}\label{fig:access2_i}
+        \includegraphics[width=\textwidth]{plots/access/siab_accomp_especif_psf_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    
+    
+    \end{center}
+    
+\end{figure}
+
+\begin{figure}[h]
+    \begin{center}
+    \caption{Causal Effects on Access to Health Services}\label{fig:access3}
+    \begin{subfigure}{0.48\textwidth}
+        \caption{\scriptsize Share of C-Section)}\label{fig:access3_a}
+        \centering
+        \includegraphics[width=\textwidth]{plots/birth/birth_c_sections_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \caption{\scriptsize Prenatal Visits None)}\label{fig:iaccess3_b}
+        \includegraphics[width=\textwidth]{plots/birth/birth_prenat_0_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \caption{\scriptsize Prenatal Visits 1-6)}\label{fig:access3_c}
+        \includegraphics[width=\textwidth]{plots/birth/birth_prenat_1_6_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \caption{\scriptsize Prenatal Visits 7+)}\label{fig:access3_d}
+        \includegraphics[width=\textwidth]{plots/birth/birth_prenat_7_plus_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    
+    
+    
+    \end{center}
+    
+\end{figure}
+
+
+\begin{figure}[h]
+    \begin{center}
+    \caption{Causal Effects on Ambulatorial Production}\label{fig:amb}
+    \begin{subfigure}{0.32\textwidth}
+        \caption{\scriptsize Outpatient procedures per capita)}\label{fig:amb_a}
+        \centering
+        \includegraphics[width=\textwidth]{plots/ambulatorial/sia_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize Primary Care Outpatient procedures per capita)}\label{fig:amb_b}
+        \includegraphics[width=\textwidth]{plots/ambulatorial/sia_ab_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize N. of Low & Mid Complexity Outpatient Procedures (per capita))}\label{fig:amb_c}
+        \includegraphics[width=\textwidth]{plots/ambulatorial/sia_nprod_amb_lc_mun_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize N. of High Complexity Outpatient Procedures (per capita))}\label{fig:amb_d}
+        \includegraphics[width=\textwidth]{plots/ambulatorial/sia_nprod_amb_hc_mun_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize N. of Outpatient Procedures by Low Skilled Workers (per capita))}\label{fig:amb_e}
+        \includegraphics[width=\textwidth]{plots/ambulatorial/sia_nprod_low_skill_mun_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \caption{\scriptsize N. of Outpatient procedures by Mid Skilled Workers (per capita))}\label{fig:amb_f}
+        \includegraphics[width=\textwidth]{plots/ambulatorial/sia_nprod_med_skill_mun_pcapita_dist_ec29_baseline_dist_ec29_baseline_full.pdf}
+    \end{subfigure}
+    
+    
+    
+    
+    \end{center}
+    
+\end{figure}
