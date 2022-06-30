@@ -6,7 +6,7 @@ We estimate the effects of the EC/29 using a difference-in-difference (DiD) desi
 The identification relies on the cross-municipality variation in the share of own resource spent in the provision of healthcare and on the exogeneity of the EC/29 approval. Our approach to estimate the effect of the EC/29 correspond to the following equation:
 
 \begin{equation} \label{eq:1}
-    Y_{mts} = \beta \, Dist_{m,pre} * Post_t  +  \delta_{st} + \delta_j + \epsilon_{mts} + \theta \, Z_{m,pre} + \gamma \, X_{mts}
+    Y_{mts} = \beta \, Dist_{m,pre} \times Post_t  +  \delta_{st} + \delta_j + \epsilon_{mts} + \theta \, Z_{m,pre} + \gamma \, X_{mts}
 \end{equation}
 
 were $Y_{mts}$ is an outcome of interest in municipality $m$, state $s$, year $t$; $Dist_{m,pre}$ is the baseline percentage points distance to EC/29 target in municipality $m$; $Post_t$ is a dummy that equals one if the year is 2001 or above. $\delta_{st}$ and $\delta_j$ represent state-year fixed effects and municipality fixed effects. Additionally we include and an interaction between socioeconomic baseline controls and time, $\theta Z_{j,pre} * \delta_{t}$, and time varying fiscal controls, $X_{mts}$. Standard errors are cluster at the municipality level and the parameters of interest are the $\beta$'s.
@@ -32,8 +32,10 @@ We are not able to empirically assess homogeneity in treatment effect, but we ca
 
 where $EC29_{t-j}$ are year specific indicators for whether EC/29 was enacted in year $t-j$; in like manner $EC29_{t+i}$ are specific year indicators for whether EC/29 was enacted in year $t+i$, that captures pre-trends in the outcome variable. The equation \ref{eq:2} also allow us to evaluate the dynamics through the years following the EC/29. 
 
+Build in point on multiple hypothesis correction.  This will be important here....  \citet{RomanoWolf2005,Anderson2008}.
 
 
+\subsection{Understanding Impacts of Health Spending on Health Outcomes}
 
 
 
