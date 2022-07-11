@@ -1,7 +1,7 @@
-\begin{table}[H]
+\begin{table}[h!]
 \begin{footnotesize}
 \begin{center}
-\scalebox{0.8}{
+\scalebox{0.9}{
 \begin{threeparttable}[b]
 
   \centering
@@ -10,26 +10,25 @@
           &       &       &       &       &  \\
     \midrule
     \midrule
-          &       & \multicolumn{4}{c}{Distance to EC9 target} \\
-\cmidrule{3-6}          &       & (1)   & (2)   & (3)   & (4) \\
+          &       & (1)   & (2)   & (3)   & (4) \\
     \midrule
     \multicolumn{1}{p{15.145em}}{\textbf{A. Infant Mortality Rate}} &       &       &       &       &  \\
-    \multicolumn{1}{l}{\multirow{2}[0]{*}{Total}} &       & -5.015 & -3.772 & -3.831 & -3.889 \\
+    \multicolumn{1}{p{15.145em}}{Total} &       & -5.015 & -3.772 & -3.831 & -3.889 \\
           &       & (3.435) & (2.853) & (2.836) & (2.828) \\
-    \multicolumn{1}{l}{\multirow{2}[0]{*}{Amenable to Primary Care}} &       & -0.361 & -0.866 & -0.893 & -0.905 \\
+    \multicolumn{1}{p{15.145em}}{Amenable to Primary Care} &       & -0.361 & -0.866 & -0.893 & -0.905 \\
           &       & (0.603) & (0.553) & (0.553) & (0.554) \\
-    \multicolumn{1}{l}{\multirow{2}[0]{*}{Non-Amenable to Primary Care}} &       & -4.653 & -2.907 & -2.939 & -2.984 \\
+    \multicolumn{1}{p{15.145em}}{Non-Amenable to Primary Care} &       & -4.653 & -2.907 & -2.939 & -2.984 \\
           &       & (3.245) & (2.645) & (2.632) & (2.624) \\
           &       &       &       &       &  \\
     \midrule
     \multicolumn{1}{p{15.145em}}{\textbf{B. By timing}} &       &       &       &       &  \\
-    \multicolumn{1}{l}{\multirow{2}[0]{*}{Fetal}} &       & -0.008 & -0.007 & -0.008 & -0.008 \\
+    \multicolumn{1}{p{15.145em}}{Fetal} &       & -0.008 & -0.007 & -0.008 & -0.008 \\
           &       & (0.008) & (0.008) & (0.008) & (0.008) \\
-    \multicolumn{1}{l}{\multirow{2}[0]{*}{Within 24h}} &       & -2.275* & -2.083** & -2.07** & -2.071** \\
+    \multicolumn{1}{p{15.145em}}{Within 24h} &       & -2.275* & -2.083** & -2.07** & -2.071** \\
           &       & (1.225) & (0.98) & (0.979) & (0.976) \\
-    \multicolumn{1}{l}{\multirow{2}[0]{*}{1 to 27 days}} &       & -4.228* & -2.883 & -2.911 & -2.922 \\
+    \multicolumn{1}{p{15.145em}}{1 to 27 days} &       & -4.228* & -2.883 & -2.911 & -2.922 \\
           &       & (2.555) & (2.064) & (2.052) & (2.046) \\
-    \multicolumn{1}{l}{\multirow{2}[0]{*}{27 days to 1 year}} &       & -0.787 & -0.89 & -0.92 & -0.967 \\
+    \multicolumn{1}{p{15.145em}}{27 days to 1 year} &       & -0.787 & -0.89 & -0.92 & -0.967 \\
           &       & (1.435) & (1.248) & (1.246) & (1.243) \\
           &       &       &       &       &  \\
     \midrule
@@ -54,6 +53,11 @@
     \bottomrule
     \bottomrule
     \end{tabular}%
+    
+    
+    \begin{tablenotes}
+  \scriptsize{\underline{Notes}: The number of observations is 64701. DiD Estimates from Equation \ref{eq:1}. Independent variable is the distance to the EC/29 target in p.p. Column 1 presents the baseline model with municipality and state-year fixed effects. Column 2 adds baseline socioeconomic controls from the Census interacted with time. Column 3 adds controls for GDP per capita and \emph{Bolsa Familia} transfers per capita. Column 4 adds fiscal controls. Covariates ommited. Standard errors in brackets are clustered in the municipality level. ∗p < 0.10, ∗ ∗ p < 0.05, ∗ ∗ ∗p < 0.01}
+  \end{tablenotes}
     
     
   \label{table:imr}%
