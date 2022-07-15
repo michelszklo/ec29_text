@@ -1,26 +1,29 @@
 \begin{figure}[h!]
     \begin{center}
-    \caption{Effects on Access to Health Services}\label{fig:14}
-    \begin{subfigure}{0.32\textwidth}
-        \caption{\scriptsize Prenatal Visits None}\label{fig:14a}
+    \caption{Effects on Ambulatorial Production}\label{fig:14}
+    \begin{subfigure}{0.48\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{plots/birth_prenat_0_dist_ec29_baseline_dist_ec29_baseline_14.pdf}
+        \caption{\scriptsize Total}\label{fig:14a}
+        \includegraphics[width=\textwidth]{plots/sia_pcapita_dist_ec29_baseline_dist_ec29_baseline_14.pdf}
     \end{subfigure}
-    \begin{subfigure}{0.32\textwidth}
+    \begin{subfigure}{0.48\textwidth}
         \centering
-        \caption{\scriptsize Prenatal Visits 1-6}\label{fig:14b}
-        \includegraphics[width=\textwidth]{plots/birth_prenat_1_6_dist_ec29_baseline_dist_ec29_baseline_14.pdf}
+        \caption{\scriptsize Primary Care}\label{fig:14b}
+        \includegraphics[width=\textwidth]{plots/sia_ab_pcapita_dist_ec29_baseline_dist_ec29_baseline_14.pdf}
     \end{subfigure}
-    \begin{subfigure}{0.32\textwidth}
+    \begin{subfigure}{0.48\textwidth}
         \centering
-        \caption{\scriptsize Prenatal Visits 7+}\label{fig:14c}
-        \includegraphics[width=\textwidth]{plots/birth_prenat_7_plus_dist_ec29_baseline_dist_ec29_baseline_14.pdf}
+        \caption{\scriptsize Low and Mid Complexity}\label{fig:14c}
+        \includegraphics[width=\textwidth]{plots/sia_nprod_amb_lc_mun_pcapita_dist_ec29_baseline_dist_ec29_baseline_14.pdf}
     \end{subfigure}
-        
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \caption{\scriptsize High Complexity}\label{fig:14d}
+        \includegraphics[width=\textwidth]{plots/sia_nprod_amb_hc_mun_pcapita_dist_ec29_baseline_dist_ec29_baseline_14.pdf}
+    \end{subfigure}
     
     \end{center}
     
-    \scriptsize{Notes: The number of observations is 63829. DiD Estimates from Equation \ref{eq:2}. Independent variable is the distance to the EC/29 target in p.p. Square dots represent the baseline model with municipality and state-year fixed effects. Round dots represent fully saturated specification (Column 4 in regression Tables). Lines represent 95\% confidence intervals. Arrows, when present, indicate confidence intervals out of the plot bounds. Standard errors are clustered in the municipality level.}
-
+        \scriptsize{Notes: The number of observations is 64482 for \ref{fig:14a} and \ref{fig:14b}, 48916 for the remaining. DiD Estimates from Equation \ref{eq:2}. Independent variable is the distance to the EC/29 target in p.p. Square dots represent the baseline model with municipality and state-year fixed effects. Round dots represent fully saturated specification (Column 4 in regression Tables). Lines represent 95\% confidence intervals. Arrows, when present, indicate confidence intervals out of the plot bounds. Standard errors are clustered in the municipality level.}
     
 \end{figure}
